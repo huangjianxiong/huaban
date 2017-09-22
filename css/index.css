@@ -1,0 +1,130 @@
+/*
+* @Author: czyb
+* @Date:   2017-05-21 21:33:46
+* @Last Modified by:   czyb
+* @Last Modified time: 2017-05-31 23:17:59
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.palette{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background:rgba(156, 156, 156, 1.0);
+	/* background: #9C9C9C; */
+}
+.tool{
+	width: 130px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 20px 10px;
+	border: 1px solid #000;
+}
+.tool .h{
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+}
+.tool>label{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #000;
+	font-size: 20px;
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	color: #000;
+	margin: 6px 6px;
+
+}
+.draw{
+	position: relative;
+	margin-left: 130px;
+	height: 100%;
+	/* background: #DED1D1; */
+	background: rgba(222, 209, 209, 1.0)
+}
+.function{
+	height: 80px;
+	border-bottom: 1px solid #000;
+}
+.function>label{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000;
+	float: left;
+	margin: 6px 6px;
+	text-align: center;
+	line-height: 40px;
+	color: #000;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+
+.function>.a1{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000;
+	float: left;
+	margin: 6px 6px;
+	text-align: center;
+	line-height: 40px;
+	color: #000;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+
+.screen{
+	position: relative;
+	width: 800px;
+	height: 550px;
+	background: #fff;
+	
+}
+.mask{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index:200;
+	/* background: #fff;
+	 */
+
+}
+.scrren>.eraser{
+	
+    display: none;
+    position: absolute;
+    z-index:300;
+    top:0;
+    left: 0;
+    border: 1px solid #000;
+	background: rgba(0, 0, 0, 0)
+
+}
+.clip{
+    display: none;
+    position: absolute;
+    border: 2px dashed #1B394F;
+   /*  background: rgba(0, 0, 0, 0) */
+   }
+.scrren>canvas{
+	background: rgba(0, 0, 0, 0)
+}
